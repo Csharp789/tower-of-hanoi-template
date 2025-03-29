@@ -18,6 +18,9 @@ public class TowerSolver {
             model.move(source, destination);
             return;
         }
+        solve(n - 1, source, auxiliary, destination);
+        model.move(source, destination);
+        solve(n - 1, auxiliary, destination, source);
 
     }
     // This new method will be recursive (call itself)
