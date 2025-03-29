@@ -13,7 +13,13 @@ public class TowerSolver {
         solve(model.getHeight(), 0, 2, 1);
     }
 
-    // Create an overloaded solve(...) method
+    private void solve(int n, int source, int destination, int auxiliary){
+        if (n == 1) {
+            model.move(source, destination);
+            return;
+        }
+
+    }
     // This new method will be recursive (call itself)
     //
     // [ solve method here]
